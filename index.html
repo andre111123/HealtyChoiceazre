@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
+
+  <title>HealtyChoice</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
+
+
+</head>
+<body>
+
+  <header class="header">
+    <h1>HealtyChoice</h1>
+    <a href="#" class="menu-icon"><ion-icon name="menu-outline"></ion-icon></a>
+  </header>
+
+  <div class="menu">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">PROFILE</a></li>
+        <li><a href="help.html">HELP</a></li>
+        <li><a href="#">INFORMATION</a></li>
+        <li><a href="login.html" class="login-link">LOGIN</a></li>
+        <div class="searchbar">
+          <input type="text"  placeholder="Cerca prodotto">
+        </div>
+    </ul>
+  </div>
+
+  <div class="rapidnavigationbar">
+    <a href="#" class="filter-link">
+      <div class="filter">
+        <ion-icon name="filter-outline"></ion-icon>
+        <label>Filter</label>
+      </div>
+    </a>
+    <div class="filter-search">
+      <input type="text" placeholder="Cerca prodotto">
+    </div>
+  </div>
+
+  <div class="filter-container">
+    <h3>Tipo di Prodotto</h3>
+    <div class="checkbox-column">
+      <label><input type="checkbox" name="productType" value="pasta">Pasta</label>
+      <label><input type="checkbox" name="productType" value="bibite">Bibite</label>
+      <label><input type="checkbox" name="productType" value="frutta">Frutta</label>
+      <label><input type="checkbox" name="productType" value="carne">Carne</label>
+    </div>
+
+    <h3>Range di Prezzo (&#8364)</h3>
+    <div class="range-container">
+      <span class="range-label">Da:</span>
+      <input class="range-input" type="range" id="minPrice" name="minPrice" min="0" max="100" step="1">
+      <span class="selected-label range-value">-</span>
+    </div>
+    <div class="range-container" style="margin-top: 20px;">
+      <span class="range-label">A:</span>
+      <input style="margin-left: 17px;" class="range-input" type="range" id="maxPrice" name="maxPrice" min="0" max="100" step="1">
+      <span class="selected-label range-value">-</span>
+    </div>
+    
+    <h3>Range di Calorie (Kcal)</h3>
+    <div class="range-container">
+      <span class="range-label">Da:</span>
+      <input class="range-input" type="range" id="minCalories" name="minCalories" min="0" max="1000" step="1">
+      <span class="selected-label range-value">-</span>
+    </div>
+    <div class="range-container" style="margin-top: 20px">
+      <span class="range-label">A:</span>
+      <input style="margin-left: 17px;" class="range-input" type="range" id="maxCalories" name="maxCalories" min="0" max="1000" step="1">
+      <span class="selected-label range-value">- </span>
+    </div>
+  </div>
+
+  <h1>Prodotti del Supermercato</h1>
+  <div class="product-list">
+    <div class="product">
+      <img src="img\product-img\p1.jpg" alt="Prodotto 1">
+      <div class="product-info">
+        <div class="product-title">Prodotto 1</div>
+        <div class="product-price">$10.99</div>
+        <div class="product-details">
+          <span>Calorie: 100</span>
+          <span>Grassi: 5g</span>
+          <span>Carboidrati: 15g</span>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img\product-img\p2.jpg" alt="Prodotto 1">
+      <div class="product-info">
+        <div class="product-title">Prodotto 1</div>
+        <div class="product-price">$10.99</div>
+        <div class="product-details">
+          <span>Calorie: 100</span>
+          <span>Grassi: 5g</span>
+          <span>Carboidrati: 15g</span>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img\product-img\p3.jpg" alt="Prodotto 1">
+      <div class="product-info">
+        <div class="product-title">Prodotto 1</div>
+        <div class="product-price">$10.99</div>
+        <div class="product-details">
+          <span>Calorie: 100</span>
+          <span>Grassi: 5g</span>
+          <span>Carboidrati: 15g</span>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="immagine_prodotto1.jpg" alt="Prodotto 1">
+      <div class="product-info">
+        <div class="product-title">Prodotto 1</div>
+        <div class="product-price">$10.99</div>
+        <div class="product-details">
+          <span>Calorie: 100</span>
+          <span>Grassi: 5g</span>
+          <span>Carboidrati: 15g</span>
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="img\product-img\p4.jpg" alt="Prodotto 1">
+      <div class="product-title">Prodotto 1</div>
+      <div class="product-price">$10.99</div>
+    </div>
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>HealtyChoice</h2>
+        <p>Benvenuti su HealtyChoice, il sito dedicato alla scelta di cibi salutari e bilanciati per uno stile di vita sano.</p>
+      </div>
+      <div class="footer-section contact">
+        <h2>Contatti (N.D.)</h2>
+        <p><ion-icon name="mail-outline"></ion-icon> info@healtychoice.com</p>
+        <p><ion-icon name="call-outline"></ion-icon> +39 1234567890</p>
+      </div>
+      <div class="footer-section follow">
+        <h2>Seguici (N.D.)</h2>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 HealtyChoice. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+  
+  
+  
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
