@@ -1,21 +1,24 @@
 backend:
-  name: github # Puoi usare altri backends come GitLab, Bitbucket, ecc.
+  name: github # Cambia questo se stai usando un altro backend (es. GitLab, Bitbucket, ecc.)
   repo: tuo_nome_utente/tuo_repository
-  branch: master # Il ramo su cui vuoi che Netlify CMS faccia le modifiche
+  branch: master # Cambia il ramo se necessario
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
     delete: 'Delete {{collection}} “{{slug}}”'
     uploadMedia: '[skip ci] Upload “{{path}}”'
-  publish_mode: editorial_workflow
+  publish_mode: editorial_workflow # Cambia se preferisci l'opzione "simple"
 
 collections:
-  - name: products
-    label: Prodotti
-    folder: _products
-    create: true
+  - name: products # Il nome della collezione
+    label: Prodotti # L'etichetta visualizzata nell'interfaccia di Netlify CMS
+    folder: _products # La cartella che conterrà i file dei dati dei prodotti
+    create: true # Abilita la creazione di nuovi prodotti tramite Netlify CMS
     fields:
       - { label: Titolo, name: title, widget: string }
       - { label: Descrizione, name: description, widget: text }
       - { label: Prezzo, name: price, widget: number }
-      # Aggiungi altri campi qui, come calorie, grassi, etc.
+      - { label: Calorie, name: calories, widget: number }
+      - { label: Grassi, name: fats, widget: number }
+      - { label: Carboidrati, name: carbohydrates, widget: number }
+      # Aggiungi altri campi necessari per i prodotti
